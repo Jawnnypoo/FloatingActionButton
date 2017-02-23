@@ -1,5 +1,5 @@
 # FloatingActionButton
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.clans/fab/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.clans/fab) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Clans%2FFloatingActionButton-blue.svg?style=flat)](http://android-arsenal.com/details/1/1684)
+[![Build Status](https://travis-ci.org/Jawnnypoo/FloatingActionButton.svg?branch=master)](https://travis-ci.org/Jawnnypoo/FloatingActionButton) [![](https://jitpack.io/v/Jawnnypoo/FloatingActionButton.svg)](https://jitpack.io/#Jawnnypoo/FloatingActionButton)
 
 Yet another implementation of [Floating Action Button](http://www.google.com/design/spec/components/buttons.html#buttons-floating-action-button) for Android with lots of features.
 
@@ -31,12 +31,6 @@ Sample APK can be found in **[Releases](https://github.com/Clans/FloatingActionB
 - *Option to set a label for the `FloatingActionMenu`'s button*
 
 # Usage
-Add a dependency to your `build.gradle`:
-```
-dependencies {
-    compile 'com.github.clans:fab:1.6.4'
-}
-```
 Add the `com.github.clans.fab.FloatingActionButton` to your layout XML file.
 ```XML
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"

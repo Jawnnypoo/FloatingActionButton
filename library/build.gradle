@@ -7,19 +7,17 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode Integer.parseInt(project.VERSION_CODE)
-        versionName project.VERSION_NAME
+        versionCode 1
+        versionName "1.0"
     }
     buildTypes {
         release {
             minifyEnabled false
             debuggable false
         }
-
-        debug {
-            minifyEnabled false
-            debuggable true
-        }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 
@@ -28,4 +26,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.2.0'
 }
 
-apply from: '../gradle-mvn-push.gradle'
+apply from: 'https://raw.githubusercontent.com/Commit451/gradle-android-javadocs/1.0.0/gradle-android-javadocs.gradle'
