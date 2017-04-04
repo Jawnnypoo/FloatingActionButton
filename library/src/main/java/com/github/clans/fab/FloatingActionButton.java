@@ -27,6 +27,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
 import android.support.annotation.NonNull;
+import android.support.v7.content.res.AppCompatResources;
 import android.support.v7.widget.AppCompatImageButton;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
@@ -795,7 +796,7 @@ public class FloatingActionButton extends AppCompatImageButton {
 
     @Override
     public void setImageResource(int resId) {
-        Drawable drawable = getResources().getDrawable(resId);
+        Drawable drawable = AppCompatResources.getDrawable(getContext(), resId);
         if (mIcon != drawable) {
             mIcon = drawable;
             updateBackground();
